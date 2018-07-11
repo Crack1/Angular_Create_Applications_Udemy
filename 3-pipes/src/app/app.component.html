@@ -1,0 +1,52 @@
+<h1>PIPES</h1>
+
+<div class="container">
+  <br>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">VARIABLE</th>
+        <th scope="col">PIPE</th>
+        <th scope="col">PRODUCTO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>{{nombre}}</th>
+        <td>uppercase</td>
+        <td>{{nombre | uppercase}}</td>
+      </tr>
+      <tr>
+        <th>{{nombre}}</th>
+        <td>lowercase</td>
+        <td>{{nombre | lowercase}}</td>
+      </tr>
+      <tr>
+        <th>{{arreglo}}</th>
+        <td>slice:3</td>
+        <td>{{arreglo | slice:3}}</td>
+      </tr>
+      <tr>
+        <th>{{arreglo}}</th>
+        <td>slice:3:6</td>
+        <td>{{arreglo | slice:3:6}}</td>
+      </tr>
+      <tr>
+        <th>{{nombre2}}</th>
+        <td>Capitalizado</td>
+        <td>{{nombre2 | capitalizado}}</td>
+      </tr>
+      <tr>
+        <th>{{nombre2}}</th>
+        <td>Capitalizado</td>
+        <td>{{nombre2 | capitalizado:false}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+
+<iframe width="560" height="315" [src]="video| domseguro:'https://www.youtube.com/embed/'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
