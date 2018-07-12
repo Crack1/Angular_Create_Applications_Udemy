@@ -45,3 +45,9 @@ npm install bootstrap
 import { ActivatedRoute } from '@angular/router' /*Sirve para ver los parametros de una URL*/
 
 The <base href="/"> tells the Angular router what is the static part of the URL. The router then only modifies the remaining part of the URL.
+
+import { HttpClient } from '@angular/common/http' /*Permite tener acceso a los servicios POST, GET,ETC...*/
+Si usamos el HttpClient en el modulo pricipal app.module ocupas importar el modulo HttpClientModule
+import { HttpClientModule } from '@angular/common/http'
+
+private activatedRoute: ActivatedRoute /*sirve para leer parametros de la URL*/
