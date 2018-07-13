@@ -14,6 +14,7 @@ import { SearchComponent } from './components/search/search.component';
 import { ShareComponent } from './components/share/share.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ArtistComponent } from './components/artist/artist.component';
     ShareComponent,
     NavbarComponent,
     SinfotoPipe,
+    DomseguroPipe,
     ArtistComponent
   ],
   imports: [

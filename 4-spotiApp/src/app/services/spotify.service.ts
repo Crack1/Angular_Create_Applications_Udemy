@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 export class SpotifyService {
 
   private urlSpotify: string = 'https://api.spotify.com/v1/'
-  private authorization: string = 'BQAgyW9qd0UQ-l8lS9rkK4GPmCCG0lcyVBZjDnvYw_MWkogAsVJxF-00faW2J0WbYZxK5asIHUq9RfmGna0'
+  private authorization: string = 'BQCPGvUJK0BobHpLngANtzCibxptyoTPtejyouz_mlGOAyVC79K8EJXUSUIt2iiRaqNi9-QM0VblBzRAd1I'
   artistas: any[] = []
   artist: any[] = []
 
@@ -38,6 +38,10 @@ export class SpotifyService {
       return this.artist
     }))*/
   }
+  getTop(artistID: string) {
+    let url = `${this.urlSpotify}artists/${artistID}/top-tracks?country=ES`
+    let headers = this.getHeaders()
+    return this.http.get(url, { headers })
+  }
 }
-
 

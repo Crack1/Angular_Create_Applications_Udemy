@@ -51,3 +51,12 @@ Si usamos el HttpClient en el modulo pricipal app.module ocupas importar el modu
 import { HttpClientModule } from '@angular/common/http'
 
 private activatedRoute: ActivatedRoute /*sirve para leer parametros de la URL*/
+
+
+antojitos lupita
+comedor lupita
+taqueria la pequena marquesa
+cantina el tenanpa garibaldi
+pulques curados las duelistas
+Tacos RON LAURO de MÉDULA
+EL INCREÍBLE SABOR CASERO EN FONDA MARGARITA desayunar colonia del valle

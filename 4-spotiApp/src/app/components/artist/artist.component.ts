@@ -11,16 +11,22 @@ export class ArtistComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, public _spotity: SpotifyService) { }
 
-  artista: any = {}
+  artista: any = []
+  pistas: any = []
   ngOnInit() {
     this.activatedRoute.params
       .pipe(map(params => params['id']))
       .subscribe(id => {
-        console.log(id)
         this._spotity.getArtista(id)
           .subscribe(artista => {
             console.log(artista)
             this.artista = artista
+          })
+        this._spotity.getTop(id)
+          .pipe(map((res: any) => res.tracks))
+          .subscribe(pistas => {
+            console.log(pistas)
+            this.pistas = pistas
           })
       })
   }
