@@ -1,0 +1,8 @@
+{
+  "name": "deseos-tabs",
+  "app_id": "e39414f2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
