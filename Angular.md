@@ -31,6 +31,7 @@ ng g c shared/breadcrumbs --spect=false -is
 ng g s services/shared --spect=false
 ng g s services/sidebar --spect=false
 ng g c pages/pages --flat -is --spec=false
+ng g d directives/resaltado
 
 /*Sometimes we need to restart the server*/
 
@@ -53,6 +54,12 @@ import { HttpClientModule } from '@angular/common/http'
 private activatedRoute: ActivatedRoute /*sirve para leer parametros de la URL*/
 
 
+npm install --save auth0-js
+<script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+
+ng serve --port 3000 /*CHANGE PORT*/
+
 antojitos lupita
 comedor lupita
 taqueria la pequena marquesa
@@ -60,3 +67,4 @@ cantina el tenanpa garibaldi
 pulques curados las duelistas
 Tacos RON LAURO de MÉDULA
 EL INCREÍBLE SABOR CASERO EN FONDA MARGARITA desayunar colonia del valle
+solution worked for me, but slightly simplified. I only deleted the ...Roaming\npm and ...\Roaming\npm-cache directories then re-ran my npm i and it seems to have fixed the issue for me.
