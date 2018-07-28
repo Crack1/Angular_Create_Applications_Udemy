@@ -60,6 +60,20 @@ npm install --save auth0-js
 
 ng serve --port 3000 /*CHANGE PORT*/
 
+[ngModel]='usuario.nombre' /*solo recibe informacion*/
+[(ngModel)]='usuario.nombre'  /*Recibe y envia informacion*/
+
+#forma="ngForm" /*#forma es una variable local que hace referencia a un elemento*/
+
+  <input type="text" class="form-control" placeholder="Nombre" name="nombre" [(ngModel)]='usuario.nombre' required minlength="5" #nombre="ngModel">
+        <div *ngIf="nombre.errors?.required">
+          Este campo es requerido
+        </div>
+        <div *ngIf="nombre.errors?.minlength ">
+          Este campo es requiere por lo menos {{nombre.errors.minlength.requiredLength}} caracteres
+        </div>
+
+
 antojitos lupita
 comedor lupita
 taqueria la pequena marquesa
