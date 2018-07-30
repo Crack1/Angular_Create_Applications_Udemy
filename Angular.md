@@ -74,6 +74,8 @@ ng serve --port 3000 /*CHANGE PORT*/
         </div>
 
 
+  pure: false /*se usa en los Pipes para que este pendiente de los ciclos de cambios que haga angular*/
+
 antojitos lupita
 comedor lupita
 taqueria la pequena marquesa
