@@ -76,6 +76,24 @@ ng serve --port 3000 /*CHANGE PORT*/
 
   pure: false /*se usa en los Pipes para que este pendiente de los ciclos de cambios que haga angular*/
 
+
+
+/*USE NODE_MODULES*/
+"styles": [
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.slim.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+
+
+
+/*uso de firebase en el chat*/
+https://github.com/angular/angularfire2
+https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
+
 antojitos lupita
 comedor lupita
 taqueria la pequena marquesa
