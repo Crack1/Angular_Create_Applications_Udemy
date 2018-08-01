@@ -94,6 +94,9 @@ ng serve --port 3000 /*CHANGE PORT*/
 https://github.com/angular/angularfire2
 https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
 
+
+JSONP o JSON con padding es una técnica de comunicación utilizada en los programas JavaScript para realizar llamadas asíncronas a dominios diferentes. JSONP es un método concebido para suplir la limitación de AJAX entre dominios, que únicamente permite realizar peticiones a páginas que se encuentran bajo el mismo dominio y puerto por razones de seguridad.
+
 antojitos lupita
 comedor lupita
 taqueria la pequena marquesa

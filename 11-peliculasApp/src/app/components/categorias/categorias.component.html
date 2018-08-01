@@ -1,0 +1,1 @@
+<a *ngFor="let genre of listCategorias;let i = index" [routerLink]="['/categorias',genre.name ]" class="badge {{genre.style}} separate"> {{genre.name}} </a>
