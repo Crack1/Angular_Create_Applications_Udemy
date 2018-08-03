@@ -11,6 +11,7 @@ import { APP_ROUTING } from './app.routes';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

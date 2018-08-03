@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 
-
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'home/:pelicula', component: HomeComponent },
   { path: 'pelicula/:id', component: PeliculaComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 
