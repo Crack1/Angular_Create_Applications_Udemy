@@ -17,6 +17,21 @@ export class PeliculasService {
     return this.jsonp.get(url).pipe(map((data) => data.json()))
   }
 
+  getPopularesNinos() {
+    let url = `${this.urlMovieDB}/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=${this.apiKey}&language=es&callback=JSONP_CALLBACK`;
+    return this.jsonp.get(url).pipe(map((data) => data.json()))
+  }
+
+  getCartelera() {
+    let desde = new Date()
+    let hasta = new Date()
+    hasta.setDate(hasta.getDate() + 7)
+    let desdeStr = `${desde.getFullYear()}-${desde.getMonth() + 1}-${desde.getDay() + 1}`
+    let hastaStr = `${hasta.getFullYear()}-${hasta.getMonth() + 1}-${hasta.getDay() + 1}`
+    let url = `${this.urlMovieDB}/discover/movie?primary_release_date.gte=${hastaStr}&primary_release_date.lte=${desdeStr}&api_key=${this.apiKey}&language=es&callback=JSONP_CALLBACK`;
+    return this.jsonp.get(url).pipe(map((data) => data.json()))
+  }
+
   buscarPelicula(texto: string) {
     let url = `${this.urlMovieDB}/search/movie?query=${texto}&sort_by=popularity.desc&api_key=${this.apiKey}&language=es&callback=JSONP_CALLBACK`;
     return this.jsonp.get(url).pipe(map((data) => data.json()))
