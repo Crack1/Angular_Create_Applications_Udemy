@@ -105,3 +105,10 @@ pulques curados las duelistas
 Tacos RON LAURO de MÉDULA
 EL INCREÍBLE SABOR CASERO EN FONDA MARGARITA desayunar colonia del valle
 solution worked for me, but slightly simplified. I only deleted the ...Roaming\npm and ...\Roaming\npm-cache directories then re-ran my npm i and it seems to have fixed the issue for me.
+
+
+ng build /*para desplegar la aplicacion son para pre produccion o testing*/
+
+/*Para produccion se cambia a true el parametro de production*/
+environment.ts
+ng build --prod
