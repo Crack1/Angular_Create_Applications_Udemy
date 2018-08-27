@@ -112,3 +112,22 @@ ng build /*para desplegar la aplicacion son para pre produccion o testing*/
 /*Para produccion se cambia a true el parametro de production*/
 environment.ts
 ng build --prod
+
+si variable 'firebase' no es reconocida ejecutar:
+npm uninstall firebase angularfire2 --save
+npm cache clean
+npm install firebase@4.8.0 angularfire2 --save
+
+/*importaciones de angular core*/
+EventEmitter siver para decirle al padre que algo sucedio, hablar con el padre
+ElementRef no siempre es necesario sirve para tener una relacion directa con el elemento html que contiene esa directiva
+HostListener sirve para crear eventos o callback cuando algo suceda como por ejemplo escuchar un click
+
+
+ for (const propiedad in Object.getOwnPropertyNames(archivosLista))  /*Object.getOwnPropertyNames toma las propiedades y las convierte en un arreglo*/
+
+
+/*CHARTS*/
+https://valor-software.com/ng2-charts/
+npm install ng2-charts --save
+npm install chart.js --save
